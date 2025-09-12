@@ -1,0 +1,3 @@
+bubbletea-chat[llm]
+python-dotenv
+anthropic
