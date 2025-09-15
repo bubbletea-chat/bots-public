@@ -72,7 +72,7 @@ def gpt_assistant(message: str, user_uuid: str = None, thread_id: str = None, co
 @gpt_assistant.config
 def get_config():
     return bt.BotConfig(
-        # Required fields
+        # Required fields - These must be provided
         name="chatgpt-wrapper",
         url=os.getenv("BOT_URL", "localhost:5000"),
         is_streaming=False,  # Useful for ChatGPT-like typing behavior
@@ -80,7 +80,8 @@ def get_config():
         display_name="ChatGPT Thread Bot",  # Max 20 characters
         subtitle="Chat in threads with AI",  # Max 30 characters
         icon_url="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg",
-        preview_video_url="",  # Optional
+        icon_emoji="🤖",  # Emoji icon alternative if no icon_url
+        preview_video_url="",  # Optional demo video URL
         description="""
 # ChatGPT Thread Bot 🤖🧵
 
@@ -101,9 +102,23 @@ This bot provides an AI chat experience powered by ChatGPT, with support for thr
 - Brainstorming ideas
 - Writing and coding assistance
         """,
-        visibility="public",
-        # Welcome message
+        visibility="public",  # Who can see the bot: "public" or "private"
+        discoverable=True,  # Whether the bot is discoverable in bot directory
+
+        # Legacy fields (kept for backward compatibility)
+        emoji="🤖",  # Deprecated, use icon_emoji instead
         initial_text="👋 Hi! I'm ChatGPT in threads. Just type a message to get started. Reply in threads to keep the context!",
+        authorization="public",  # Deprecated, use visibility instead
+        authorized_emails=None,  # List of authorized emails for private bots
+        subscription_monthly_price=0,  # Monthly subscription price in cents (0 = free, 500 = $5.00)
+
+        # Advanced configuration
+        cors_config=None,  # Custom CORS configuration (optional)
+
+        # Bot examples
+        example_chats=[
+            "https://bubbletea.chat/shared/wrhjUAYmHryp3XFZFauSYyCjypq4n8v3egC9RmvxtD8"
+        ],  # Sample prompts users can try
     )
 
 
