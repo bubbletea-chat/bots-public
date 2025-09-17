@@ -18,7 +18,8 @@ An interactive demonstration bot that showcases all available UI components in t
 5. Add your API keys to `.env`
 6. Run the bot: `python bot.py`
 
-## Available Components Demonstrated
+## Configuration
+### Components Demonstrated
 - **Text**: Basic text messages with formatting
 - **Markdown**: Rich text with headers, lists, and code blocks
 - **Pills**: Interactive button choices
@@ -29,6 +30,12 @@ An interactive demonstration bot that showcases all available UI components in t
 - **Links**: Clickable hyperlinks
 - **Tables**: Data in tabular format
 - **Code Blocks**: Syntax-highlighted code
+
+### Environment Variables
+Create a `.env` file with:
+```bash
+BUBBLETEA_API_KEY=your_bubbletea_api_key
+```
 
 ## Commands
 - `/start` - Begin the component showcase
@@ -58,12 +65,7 @@ An interactive demonstration bot that showcases all available UI components in t
 - **Docker**: Container deployment supported
 - **Cloud**: Deploy to any Python-supporting platform
 
-## Development Notes
-This bot serves as a reference implementation. Developers can:
-- Copy component usage patterns
-- Understand component parameters
-- Test component rendering
-- Validate component behavior
 
 ## Support
-For questions about components or the BubbleTea platform, refer to the main documentation or submit an issue.
+For questions about components or the BubbleTea platform:
+- **Documentation & Issues**: [github.com/bubbletea-chat/bubbletea](https://github.com/bubbletea-chat/bubbletea)

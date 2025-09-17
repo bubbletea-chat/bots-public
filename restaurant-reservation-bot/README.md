@@ -29,7 +29,7 @@ Customize your restaurant settings in `.env`:
 - **Time Zones**: Configure local timezone
 - **Notifications**: Enable confirmation messages
 
-## Reservation Flow
+### Reservation Flow
 1. **Welcome**: Greet customer and show options
 2. **Date Selection**: Choose reservation date
 3. **Time Selection**: Pick available time slot
@@ -49,7 +49,7 @@ Customize your restaurant settings in `.env`:
 - `/location` - Show restaurant location
 - `/help` - Display help information
 
-## Interactive Components
+### Interactive Components
 - **Date Picker**: Calendar-style date selection
 - **Time Slots**: Available times as pills
 - **Party Size**: Numeric selector (1-10 guests)
@@ -63,7 +63,7 @@ Customize your restaurant settings in `.env`:
 - **Walk-in Management**: Same-day availability
 - **Waitlist Management**: Handle fully booked scenarios
 
-## Reservation Management
+### Reservation Management
 ### Validation Rules
 - Advance booking required (configurable)
 - Operating hours enforcement
@@ -86,7 +86,7 @@ Customize your restaurant settings in `.env`:
 - **Time Handling**: Timezone-aware scheduling
 - **Confirmation**: Automated messaging
 
-## Advanced Features
+### Advanced Features
 - Table management system
 - Waitlist functionality
 - SMS/Email confirmations
@@ -95,19 +95,19 @@ Customize your restaurant settings in `.env`:
 - Multi-location support
 - VIP customer recognition
 
-## Integration Options
-### Payment Processing
+### Integration Options
+#### Payment Processing
 - Deposit collection
 - Cancellation fees
 - Pre-payment options
 
-### External Systems
+#### External Systems
 - POS integration
 - CRM connectivity
 - Calendar sync
 - SMS gateways
 
-## Best Practices
+### Best Practices
 - Clear cancellation policy
 - Reminder notifications
 - No-show tracking
@@ -121,14 +121,14 @@ Customize your restaurant settings in `.env`:
 - **Docker**: Container-based setup
 - **Enterprise**: Multi-location chains
 
-## Customization
+### Customization
 - Branding and theming
 - Custom booking rules
 - Language localization
 - Menu integration
 - Loyalty program connection
 
-## Analytics
+### Analytics
 - Booking patterns
 - Popular time slots
 - No-show rates
@@ -136,4 +136,4 @@ Customize your restaurant settings in `.env`:
 - Revenue optimization
 
 ## Support
-For assistance or custom features, please submit an issue in this repository.
+- **BubbleTea Documentation & Issues**: [github.com/bubbletea-chat/bubbletea](https://github.com/bubbletea-chat/bubbletea)

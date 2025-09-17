@@ -50,7 +50,7 @@ An intelligent AI assistant powered by Google's Gemini models, providing advance
 - **Problem Solving**: Math, logic, strategic planning
 - **Language Tasks**: Translation, grammar correction, writing improvement
 
-## Example Interactions
+### Example Interactions
 - "Write a Python script to process CSV files"
 - "Explain machine learning to a beginner"
 - "Help me debug this JavaScript code"
@@ -66,7 +66,7 @@ An intelligent AI assistant powered by Google's Gemini models, providing advance
 - **Streaming**: Real-time response generation
 - **Rate Limiting**: Based on API tier
 
-## Advanced Features
+### Advanced Features
 - Custom temperature settings
 - Response length control
 - Safety settings configuration
@@ -75,7 +75,7 @@ An intelligent AI assistant powered by Google's Gemini models, providing advance
 - System prompt customization
 - Batch processing support
 
-## Multimodal Capabilities
+### Multimodal Capabilities
 When using gemini-pro-vision:
 - Image analysis and description
 - Visual question answering
@@ -83,7 +83,7 @@ When using gemini-pro-vision:
 - Object detection and identification
 - Image-based reasoning
 
-## Best Practices
+### Best Practices
 - Provide clear, specific prompts
 - Include relevant context in questions
 - Use appropriate model for your task
@@ -97,14 +97,14 @@ When using gemini-pro-vision:
 - **Serverless**: Cloud Functions, Lambda
 - **Kubernetes**: Scalable deployment
 
-## Safety and Limitations
+### Safety and Limitations
 - Content filtering for safety
 - No real-time web access
 - Knowledge cutoff date applies
 - Cannot execute code directly
 - Rate limits based on API tier
 
-## Performance Tips
+### Performance Tips
 - Cache frequently used responses
 - Implement retry logic for API calls
 - Monitor token usage
@@ -113,4 +113,4 @@ When using gemini-pro-vision:
 
 ## Support
 For Google AI documentation, visit [ai.google.dev](https://ai.google.dev)
-For bot-specific issues, submit an issue in this repository.
+For BubbleTea platform issues: [github.com/bubbletea-chat/bubbletea](https://github.com/bubbletea-chat/bubbletea)

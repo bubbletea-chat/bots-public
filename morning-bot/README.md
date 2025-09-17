@@ -1,8 +1,9 @@
-# 🌅 Morning Brief Bot
+# Morning Brief Bot
 
+## Description
 An intelligent morning briefing bot built for the BubbleTea Chat platform. Get personalized daily weather and news summaries delivered at your preferred wake-up time!
 
-## 🌟 Features
+## Features
 
 - **Personalized Morning Briefs**: Customized weather and news based on your location and interests
 - **Scheduled Delivery**: Automatic delivery at your preferred wake-up time
@@ -13,28 +14,29 @@ An intelligent morning briefing bot built for the BubbleTea Chat platform. Get p
 - **Rich UI Components**: Interactive pills and formatted messages
 - **Flexible Commands**: Multiple ways to interact with the bot
 
-## 🎯 How It Works
+### How It Works
 
-### Onboarding Flow
+#### Onboarding Flow
 1. **Location Setup**: Enter your city and country (e.g., "London, UK")
 2. **Interest Selection**: Choose from 9 news categories (Technology, Business, Sports, etc.)
 3. **Wake Time**: Set your preferred morning brief delivery time (24-hour format)
 4. **Completion**: Receive confirmation and quick action options
 
-### Daily Briefings
+#### Daily Briefings
 - Automatically generated and delivered at your specified wake-up time
 - Includes weather forecast with practical tips
 - Contains 3-4 relevant news headlines with descriptions
 - Formatted with emojis and easy-to-read structure
 
-## 🛠️ Installation
+## Setup Instructions
+1. Clone this repository
+2. Navigate to the bot folder: `cd morning-bot`
+3. Install dependencies: `pip install -r requirements.txt`
+4. Copy environment variables: `cp .env.example .env`
+5. Add your API keys to `.env`
+6. Run the bot: `python bot.py`
 
-### Prerequisites
-- Python 3.8+
-- BubbleTea Chat SDK
-- OpenAI API access
-- Supabase database (optional, for persistent storage)
-
+## Configuration
 ### Environment Variables
 Create a `.env` file with the following variables:
 
@@ -48,27 +50,13 @@ SUPABASE_URL=your_supabase_project_url
 SUPABASE_KEY=your_supabase_service_role_key
 ```
 
-### Setup
+### Prerequisites
+- Python 3.8+
+- BubbleTea Chat SDK
+- OpenAI API access
+- Supabase database (optional, for persistent storage)
 
-1. **Clone and Install**:
-```bash
-git clone https://github.com/bubbletea-chat/bubbletea
-cd bots-public/morning-bot
-pip install -r requirements.txt
-```
-
-2. **Configure Environment**:
-```bash
-cp .env.example .env
-# Edit .env with your API keys
-```
-
-4. **Run the Bot**:
-```bash
-python bot.py
-```
-
-## 🎮 Available Commands
+## Commands
 
 | Command | Description |
 |---------|-------------|
@@ -81,9 +69,16 @@ python bot.py
 | `status` | View your current settings |
 
 
-## 🔧 Architecture
+## Use Cases
+- **Personal Morning Briefs**: Daily weather and news summaries
+- **Location-Based Updates**: Weather and news for your specific area
+- **Interest-Based News**: Customized news based on selected topics
+- **Scheduled Delivery**: Automatic briefs at your wake-up time
+- **On-Demand Briefs**: Generate morning briefs anytime
 
-### Core Components
+## Technical Details
+
+### Architecture
 
 **MorningBriefBot**: Main orchestrator handling user interactions and routing commands
 
@@ -102,7 +97,7 @@ python bot.py
 **StorageAdapter**: Provides abstraction for data persistence (Supabase implementation)
 
 
-## 🤖 AI Integration
+### AI Integration
 
 The bot leverages **OpenAI GPT-4** with web search capabilities to provide:
 
@@ -118,7 +113,7 @@ The bot leverages **OpenAI GPT-4** with web search capabilities to provide:
 - Category-specific filtering (Technology, Business, Sports, etc.)
 - Brief, digestible descriptions
 
-## 🧪 Testing
+### Testing
 
 ### Manual Testing
 ```bash
@@ -139,7 +134,13 @@ python bot.py
 - Confirm BubbleTea API notifications
 - Validate scheduler timing accuracy
 
-## 🤝 Contributing
+## Deployment Options
+- **Local**: Run directly with Python
+- **Docker**: Container deployment supported
+- **Cloud**: Deploy to any Python-supporting platform
+- **Serverless**: AWS Lambda, Google Cloud Functions
+
+### Contributing
 
 We welcome contributions to improve the Morning Brief Bot!
 
@@ -147,8 +148,9 @@ We welcome contributions to improve the Morning Brief Bot!
 
 1. **Fork and Setup**:
 ```bash
-git fork https://github.com/your-org/morning-brief-bot
-cd morning-brief-bot
+git fork https://github.com/bubbletea-chat/bots-public
+cd bots-public
+cd openai-bot
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
@@ -227,42 +229,14 @@ git checkout -b feature/your-enhancement
    - Documentation review
    - Manual testing in development environment
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **OpenAI** for GPT-4 API and web search capabilities
-- **Supabase** for reliable database hosting
-- **BubbleTea Chat** platform for bot infrastructure
-- **Contributors** who help improve the bot
-
-## 📞 Support
+## Support
 
 Need help or found a bug?
 
-1. **Check Documentation**: Review this README and code comments
-2. **Search Issues**: Look for similar problems in GitHub Issues
-3. **Create Issue**: Report bugs or request features
-4. **Community**: Join our Discord for real-time help
-
-## 🚀 Roadmap
-
-### Version 2.0
-- [ ] Multi-timezone support
-- [ ] Voice message delivery
-- [ ] Calendar integration
-- [ ] Weather alert system
-
-### Version 3.0
-- [ ] Multi-language support
-- [ ] Smart home integration
-- [ ] Advanced personalization
-- [ ] Analytics dashboard
+- **BubbleTea Documentation & Issues**: [github.com/bubbletea-chat/bubbletea](https://github.com/bubbletea-chat/bubbletea)
 
 ---
 
 **Stay informed, start your day right! ☀️**
 
-*Built with ❤️ for the BubbleTea Chat community*
+*Built with ❤️ for BubbleTea Chat*

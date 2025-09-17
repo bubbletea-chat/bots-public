@@ -48,7 +48,7 @@ An advanced AI assistant powered by Anthropic's Claude, offering intelligent con
 - **Problem Solving**: Logic puzzles, math problems, strategic planning
 - **Creative Tasks**: Story writing, brainstorming, idea generation
 
-## Example Interactions
+### Example Interactions
 - "Help me write a Python function to sort a list"
 - "Explain quantum computing in simple terms"
 - "Review this code for potential bugs"
@@ -63,7 +63,7 @@ An advanced AI assistant powered by Anthropic's Claude, offering intelligent con
 - **Streaming**: Real-time response streaming
 - **Rate Limiting**: Handled automatically
 
-## Best Practices
+### Best Practices
 - Be specific in your requests for better responses
 - Use clear, concise language
 - Provide context when asking follow-up questions
@@ -76,14 +76,14 @@ An advanced AI assistant powered by Anthropic's Claude, offering intelligent con
 - **Cloud**: Deploy to any Python-supporting platform
 - **Serverless**: AWS Lambda, Google Cloud Functions
 
-## Advanced Features
+### Advanced Features
 - Custom system prompts
 - Temperature and parameter tuning
 - Response length control
 - Token usage tracking
 - Conversation export
 
-## Limitations
+### Limitations
 - No real-time information or web browsing
 - Cannot execute code (only generate)
 - Knowledge cutoff based on training data
@@ -91,4 +91,4 @@ An advanced AI assistant powered by Anthropic's Claude, offering intelligent con
 
 ## Support
 For Anthropic API documentation, visit [docs.anthropic.com](https://docs.anthropic.com)
-For bot-specific issues, submit an issue in this repository.
+For BubbleTea platform issues: [github.com/bubbletea-chat/bubbletea](https://github.com/bubbletea-chat/bubbletea)

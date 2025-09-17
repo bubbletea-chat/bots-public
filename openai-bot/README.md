@@ -4,6 +4,8 @@ A simple yet powerful OpenAI GPT-4 assistant bot built for the BubbleTea Chat pl
 
 ## 🎬 Live Demo
 
+![GPT Assistant Bot Demo](./openai-bot-demo.gif)
+
 **Try it now:** [https://bubbletea.chat/gpt-assistant/chat](https://bubbletea.chat/gpt-assistant/chat)
 
 **Example Chat:** [View a sample conversation](https://bubbletea.chat/shared/wrhjUAYmHryp3XFZFauSYyCjypq4n8v3egC9RmvxtD8)
@@ -90,60 +92,7 @@ python bot.py
 - **Temperature**: 0.7 for balanced creativity and accuracy
 - **Context Window**: Full conversation history maintained
 
-## 📱 Usage Examples
-
-### Basic Conversation
-```
-User: "Hello! Can you help me with Python?"
-Bot: "Hello! I'd be happy to help you with Python programming.
-      What specific topic or problem would you like assistance with?"
-
-User: "How do I read a file in Python?"
-Bot: "Here are several ways to read a file in Python:
-
-      **Method 1: Using with statement (recommended)**
-      ```python
-      with open('filename.txt', 'r') as file:
-          content = file.read()
-          print(content)
-      ```
-
-      This automatically handles file closing even if an error occurs..."
-```
-
-### Technical Discussion
-```
-User: "Explain async/await in Python"
-Bot: "Async/await in Python is used for asynchronous programming, allowing you to write
-      concurrent code that can handle multiple operations without blocking...
-
-      **Key Concepts:**
-      - `async def`: Defines a coroutine function
-      - `await`: Pauses execution until the awaited operation completes
-      - Event loop: Manages and executes async operations
-
-      **Example:**
-      ```python
-      async def fetch_data():
-          await some_async_operation()
-          return data
-      ```"
-```
-
 ## 🏗️ Architecture
-
-### Code Structure
-```
-bot.py
-├── process_message_async()    # Async message processing
-├── gpt_assistant()           # Main bot handler
-└── API Integration           # BubbleTea platform communication
-```
-
-### Flow Diagram
-```
-User Message → BubbleTea Chat → Bot Handler → OpenAI GPT-4 → Response → BubbleTea API → User
-```
 
 ## 📖 Code Walkthrough
 
@@ -161,7 +110,7 @@ def gpt_assistant(message: str, user_uuid: str = None, thread_id: str = None, co
 - Launches async processing for non-blocking operation
 - Returns immediate acknowledgment to user
 
-### 2. **Thread Management** (`bot.py:52-55`)
+### 2. **Thread Management**
 Ensures conversation continuity:
 
 ```python
@@ -174,7 +123,7 @@ if not thread_id:
 - Preserves conversation context across exchanges
 
 ### 3. **Async Message Processing** (`process_message_async()`)
-Located at `bot.py:16-44`, handles the actual AI interaction:
+Handles the actual AI interaction:
 
 ```python
 async def process_message_async(message: str, conversation_uuid: str, thread_id: str = None):
@@ -188,7 +137,7 @@ async def process_message_async(message: str, conversation_uuid: str, thread_id:
 3. Format response as Markdown component
 4. Post response back to BubbleTea API
 
-### 4. **Response Delivery** (`bot.py:28-44`)
+### 4. **Response Delivery**
 Sends AI response back to user:
 
 ```python
@@ -203,7 +152,7 @@ async with httpx.AsyncClient() as client:
 - Authenticates with BubbleTea API key
 - Handles errors gracefully without blocking
 
-### 5. **Bot Configuration** (`bot.py:72-107`)
+### 5. **Bot Configuration**
 Defines bot metadata and behavior:
 
 ```python
@@ -223,7 +172,7 @@ def get_config():
 - Welcome message for new users
 - Public visibility for discovery
 
-### 6. **Server Initialization** (`bot.py:110-111`)
+### 6. **Server Initialization**
 Starts the bot server:
 
 ```python
@@ -262,104 +211,11 @@ export BUBBLETEA_API_KEY="your_key_here"
 python bot.py
 ```
 
-### Adding Features
-
-**Example: Custom System Prompts**
-```python
-# Modify the LLM initialization
-llm = LLM(
-    model="gpt-4",
-    llm_provider="openai",
-    system_prompt="You are a helpful coding assistant specialized in Python."
-)
-```
-
-**Example: Response Filtering**
-```python
-# Add content filtering before sending response
-def filter_response(response: str) -> str:
-    # Add your filtering logic here
-    return response.replace("inappropriate_content", "[filtered]")
-```
-
-## 🔐 Security Considerations
-
-- **API Key Protection**: Store API keys in environment variables, never in code
-- **Input Validation**: Validate user inputs before processing
-- **Rate Limiting**: Implement rate limiting to prevent API abuse
-- **Error Sanitization**: Don't expose sensitive error details to users
-- **Content Filtering**: Consider implementing content filters for inappropriate responses
-
-## 🚀 Deployment
-
-### Production Setup
-```bash
-# Set production environment variables
-export ENVIRONMENT=production
-export OPENAI_API_KEY="prod_key_here"
-export BUBBLETEA_API_KEY="prod_key_here"
-
-# Use process manager (PM2, systemd, etc.)
-pm2 start gpt_assistant_bot.py --name "gpt-assistant"
-```
-
-### Docker Deployment
-```dockerfile
-FROM python:3.11-slim
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-COPY . .
-CMD ["python", "bot.py"]
-```
-
-## 📊 Monitoring
-
-### Key Metrics
-- Response time to user messages
-- OpenAI API usage and costs
-- Error rates and types
-- User engagement and satisfaction
-
-### Logging
-```python
-import logging
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
-
-# Add logging to track usage
-logger.info(f"Processing message for user {user_uuid}")
-logger.error(f"API error: {str(e)}")
-```
-
-## 🤝 Contributing
-
-1. **Fork the Repository**
-2. **Create Feature Branch**: `git checkout -b feature/amazing-feature`
-3. **Make Changes**: Implement your improvements
-4. **Add Tests**: Ensure functionality works correctly
-5. **Commit Changes**: `git commit -m 'Add amazing feature'`
-6. **Push to Branch**: `git push origin feature/amazing-feature`
-7. **Open Pull Request**: Submit your contribution
-
-### Contribution Guidelines
-- Follow PEP 8 style guidelines
-- Add docstrings to all functions
-- Include error handling
-- Test with different conversation contexts
-- Update README if adding new features
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## 🆘 Support
 
-- **Documentation**: See BubbleTea Chat documentation
-- **Issues**: Report bugs via GitHub issues
-- **Community**: Join BubbleTea Chat community discussions
-- **Email**: Contact support for enterprise needs
+- **BubbleTea Documentation & Issues**: [github.com/bubbletea-chat/bubbletea](https://github.com/bubbletea-chat/bubbletea)
 
 ---
 
-**Built with ❤️ for the BubbleTea Chat community**
+**Built with ❤️ for BubbleTea Chat**

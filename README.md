@@ -234,7 +234,7 @@ ai-assistant/
 ## 🆘 Getting Help
 
 - **SDK Documentation**: [bubbletea.chat/docs](https://bubbletea.chat/docs)
-- **GitHub Issues**: Report bugs or ask questions
+- **BubbleTea Documentation & Issues**: [github.com/bubbletea-chat/bubbletea](https://github.com/bubbletea-chat/bubbletea)
 - **Developer Dashboard**: [bubbletea.chat/developer](https://bubbletea.chat/developer)
 
 ## 📄 License
@@ -252,7 +252,7 @@ All bots in this repository should be open source. By contributing, you agree to
 ---
 
 <div align="center">
-  <b>Built with ❤️ by the Bubbletea Community</b>
+  <b>Built with ❤️ by Bubbletea</b>
   <br>
   <a href="https://bubbletea.chat">Website</a> •
   <a href="https://github.com/bubbletea-chat">GitHub</a> •
