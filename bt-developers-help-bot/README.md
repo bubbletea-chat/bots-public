@@ -1,9 +1,9 @@
 # BubbleTea Developers Help Bot
 
-## What This Bot Does
+## Description
 An intelligent assistant that helps developers learn and use the BubbleTea SDK. Get instant answers to your SDK questions, see code examples, and learn best practices for building chatbots on the BubbleTea platform.
 
-## Key Features
+## Features
 - **Instant SDK Help**: Ask questions about BubbleTea components and get immediate answers
 - **Code Examples**: See practical, working code snippets for common tasks  
 - **Component Reference**: Learn about Text, Image, Markdown, Cards, Pills, and more
@@ -11,9 +11,7 @@ An intelligent assistant that helps developers learn and use the BubbleTea SDK. 
 - **LLM Integration Help**: Learn how to use OpenAI, Claude, Gemini and 100+ models
 - **Real-time Assistance**: Interactive Q&A based on official documentation
 
-## How to Use
-
-### Quick Start
+## Setup Instructions
 1. Clone this repository
 2. Navigate to the bot folder: `cd bt_developers_help_bot`
 3. Install dependencies: `pip install -r requirements.txt`
@@ -21,6 +19,21 @@ An intelligent assistant that helps developers learn and use the BubbleTea SDK. 
 5. Configure your API keys in `.env`
 6. Run the bot: `python bot.py`
 
+## Configuration
+
+### Environment Variables
+```env
+# OpenAI Configuration (for GPT-powered answers)
+OPENAI_API_KEY=your_openai_api_key
+
+# BubbleTea Configuration
+BUBBLETEA_API_KEY=your_bubbletea_api_key
+
+# Bot Settings
+BOT_URL=http://example.com
+```
+
+## Commands
 ### Example Questions
 **You**: "How do I create a simple chatbot?"
 **Bot**: Shows complete code example with explanation
@@ -34,7 +47,7 @@ An intelligent assistant that helps developers learn and use the BubbleTea SDK. 
 **You**: "Show me how to use Pills for buttons"
 **Bot**: Provides interactive button implementation examples
 
-## Available Topics
+### Available Topics
 - **Getting Started**: Bot creation, setup, deployment
 - **Components**: All UI components (Text, Markdown, Cards, Pills, etc.)
 - **LLM Integration**: Using AI models in your bots
@@ -43,7 +56,7 @@ An intelligent assistant that helps developers learn and use the BubbleTea SDK. 
 - **Advanced Features**: Streaming, async processing, webhooks
 - **Best Practices**: Production tips and optimization
 
-## Common Use Cases
+## Use Cases
 
 ### Learning the SDK
 - Understanding component usage
@@ -63,21 +76,7 @@ An intelligent assistant that helps developers learn and use the BubbleTea SDK. 
 - Method signatures
 - Configuration options
 
-## Configuration
-
-### Environment Variables (.env)
-```env
-# OpenAI Configuration (for GPT-powered answers)
-OPENAI_API_KEY=your_openai_api_key
-
-# BubbleTea Configuration
-BUBBLETEA_API_KEY=your_bubbletea_api_key
-
-# Bot Settings
-BOT_URL=http://example.com
-```
-
-## How It Works
+## Technical Details
 The bot has access to the complete BubbleTea SDK documentation and uses AI to provide accurate, contextual answers to your development questions. It can:
 - Parse your questions to understand what you need
 - Search through documentation for relevant information
@@ -85,10 +84,18 @@ The bot has access to the complete BubbleTea SDK documentation and uses AI to pr
 - Explain concepts in clear, simple terms
 - Provide best practice recommendations
 
-## Requirements
+### Requirements
 - Python 3.8+
 - BubbleTea Chat SDK
 - OpenAI API key (for AI-powered responses)
 
+## Deployment Options
+- **Local**: Run directly with Python
+- **Replit**: Fork and run on Replit
+- **Docker**: Container deployment supported
+- **Cloud**: Deploy to any Python-supporting platform
+
 ## Support
-For SDK issues or questions not answered by this bot, visit the [official BubbleTea documentation](https://pypi.org/project/bubbletea-chat/) or open an issue in this repository.
+For SDK issues or questions not answered by this bot:
+- **BubbleTea Documentation & Issues**: [github.com/bubbletea-chat/bubbletea](https://github.com/bubbletea-chat/bubbletea)
+- **PyPI Package**: [pypi.org/project/bubbletea-chat/](https://pypi.org/project/bubbletea-chat/)
