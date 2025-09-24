@@ -74,7 +74,7 @@ def get_config():
     return bt.BotConfig(
         # Required fields - These must be provided
         name="chatgpt-wrapper",
-        url=os.getenv("BOT_URL", "localhost:5000"),
+        url="localhost:5000",
         is_streaming=False,  # Useful for ChatGPT-like typing behavior
         # Metadata for discovery and display
         display_name="ChatGPT Thread Bot",  # Max 20 characters
