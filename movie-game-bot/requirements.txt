@@ -1,3 +1,0 @@
-bubbletea-chat
-openai
-python-dotenv

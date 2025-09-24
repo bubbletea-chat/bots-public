@@ -1,2 +1,0 @@
-bubbletea-chat
-python-dotenv

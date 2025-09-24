@@ -1,3 +1,0 @@
-bubbletea-chat
-python-dotenv
-python-dateutil

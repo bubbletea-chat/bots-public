@@ -1,4 +1,0 @@
-bubbletea-chat
-anthropic
-python-dotenv
-httpx
