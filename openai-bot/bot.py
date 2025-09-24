@@ -123,4 +123,4 @@ This bot provides an AI chat experience powered by ChatGPT, with support for thr
 
 
 if __name__ == "__main__":
-    bt.run_server(gpt_assistant, port=5000, host="0.0.0.0")
+    bt.run_server(gpt_assistant, port=8080, host="0.0.0.0")

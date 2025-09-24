@@ -264,4 +264,4 @@ Type 'start' to begin!
 
 
 if __name__ == "__main__":
-    bt.run_server(movie_guessing_game, port=5002, host="0.0.0.0")
+    bt.run_server(movie_guessing_game, port=8080, host="0.0.0.0")

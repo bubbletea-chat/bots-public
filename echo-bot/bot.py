@@ -61,4 +61,4 @@ No API keys required! Just run and start chatting.
 
 
 if __name__ == "__main__":
-    bt.run_server(echo_bot, port=5000, host="0.0.0.0")
+    bt.run_server(echo_bot, port=8080, host="0.0.0.0")
