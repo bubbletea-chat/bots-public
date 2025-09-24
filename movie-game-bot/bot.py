@@ -4,7 +4,7 @@ import os
 import json
 from typing import Dict, List, Optional, Any
 import openai
-from main import bt
+import bubbletea_chat as bt
 from bubbletea_chat.components import Pill, Pills, Text
 from dotenv import load_dotenv
 
