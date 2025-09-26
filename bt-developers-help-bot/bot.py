@@ -91,4 +91,4 @@ An AI assistant specifically trained on the BubbleTea SDK documentation to help 
 
 
 if __name__ == "__main__":
-    bt.run_server(bt_developers_help_bot, port=8002, host="0.0.0.0")
+    bt.run_server(bt_developers_help_bot, port=8080, host="0.0.0.0")

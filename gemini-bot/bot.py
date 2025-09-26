@@ -71,4 +71,4 @@ This bot provides an AI chat experience powered by Google's Gemini, with support
 
 
 if __name__ == "__main__":
-    bt.run_server(gemini_assistant, port=5001, host="0.0.0.0")
+    bt.run_server(gemini_assistant, port=8080, host="0.0.0.0")
