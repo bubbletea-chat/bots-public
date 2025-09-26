@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 from typing import Dict, List, Optional, Callable
 from core.user_preferences import UserPreferences
 from services.notification_service import NotificationService
-from storage.storage_adapter import StorageAdapter
+from storage.storage_adapter import StorageAdapte
 
 
 class Scheduler:
