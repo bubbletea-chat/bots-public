@@ -1,7 +1,7 @@
 from typing import Dict, Any, Optional, List
 from datetime import datetime, time
 import json
-from ..storage.storage_adapter import StorageAdapter
+from storage.storage_adapter import StorageAdapter
 
 
 class UserPreferences:

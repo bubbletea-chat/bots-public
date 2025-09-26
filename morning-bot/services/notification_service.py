@@ -1,6 +1,6 @@
 import requests
 from typing import Optional, Dict, Any
-from ..config import BUBBLETEA_API_KEY, BUBBLETEA_API_URL, BUBBLETEA_BOT_NAME
+from config import BUBBLETEA_API_KEY, BUBBLETEA_API_URL, BUBBLETEA_BOT_NAME
 import bubbletea_chat as bt
 
 

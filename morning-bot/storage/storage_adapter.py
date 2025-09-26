@@ -2,7 +2,7 @@ import json
 import os
 from typing import Dict, Any, Optional, List
 from datetime import datetime
-from ..config import SUPABASE_URL, SUPABASE_KEY
+from config import SUPABASE_URL, SUPABASE_KEY
 
 
 class StorageAdapter:
