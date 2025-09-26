@@ -1,9 +1,9 @@
 from typing import Dict, Any, Optional, List
 import bubbletea_chat as bt
-from ..core.user_preferences import UserPreferences
-from ..services.weather_service import WeatherService
-from ..services.news_service import NewsService
-from ..storage.storage_adapter import StorageAdapter
+from core.user_preferences import UserPreferences
+from services.weather_service import WeatherService
+from services.news_service import NewsService
+from storage.storage_adapter import StorageAdapter
 
 
 class OnboardingManager:

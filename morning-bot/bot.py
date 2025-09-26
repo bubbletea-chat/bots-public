@@ -7,21 +7,13 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-try:
-    from .core.onboarding_manager import OnboardingManager
-    from .core.scheduler import Scheduler
-    from .core.user_preferences import UserPreferences
-    from .services.news_service import NewsService
-    from .services.weather_service import WeatherService
-    from .storage.storage_adapter import StorageAdapter
-except ImportError:
-    # When running as a script, use absolute imports
-    from core.onboarding_manager import OnboardingManager
-    from core.scheduler import Scheduler
-    from core.user_preferences import UserPreferences
-    from services.news_service import NewsService
-    from services.weather_service import WeatherService
-    from storage.storage_adapter import StorageAdapter
+# Use absolute imports for Google Cloud deployment compatibility
+from core.onboarding_manager import OnboardingManager
+from core.scheduler import Scheduler
+from core.user_preferences import UserPreferences
+from services.news_service import NewsService
+from services.weather_service import WeatherService
+from storage.storage_adapter import StorageAdapter
 
 
 async def handler(input_data: Dict[str, Any]) -> bt.Component:
