@@ -84,4 +84,4 @@ Make sure to set your ANTHROPIC_API_KEY environment variable
 
 
 if __name__ == "__main__":
-    bt.run_server(claude_assistant, port=5000, host="0.0.0.0")
+    bt.run_server(claude_assistant, port=8080, host="0.0.0.0")
