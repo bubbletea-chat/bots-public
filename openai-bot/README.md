@@ -19,6 +19,7 @@ A simple yet powerful OpenAI GPT-4 assistant bot built for the BubbleTea Chat pl
 - **Session Management**: Per-user conversation threads for personalized experiences
 - **Error Handling**: Robust error management with graceful fallbacks
 - **Simple Setup**: Minimal configuration required to get started
+- **Open Source**: Fully open-source codebase for transparency and customization
 
 ## 🎯 How It Works
 
